@@ -6,38 +6,48 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import HomePage from "./components/templates/HomePage";
 import TrackingPage from "./components/templates/TrackingPage";
+import CustomerPage from "./components/templates/CustomerPage";
 import Header from "./components/molecules/Header";
 import Faq from "./components/templates/Faq";
-import Result from "./components/molecules/Result";
+
+
 import "./css/style.css";
+
+import information from "./information.json";
 
 
 export default function App() {
+  // const [information, setInformation] = useState([]);
+  // useEffect(() => {  
+  //   getData();
+  // }, []);
 
-  //const [status, setstatus] = useState(0);
-  //const [information, setInformation] = useState([]);
+  // const getData = async () => {    
+  //     const response = await fetch(`https://my.api.mockaroo.com/orders.json?key=e49e6840`);  
+  //     const data = await response.json();     
+  //     setInformation(data);  
+  // };
 
-  //const endPoint = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
 
-  // Contructor like hook
-  useEffect(() => {  
-    getData();
-  }, []);
-
-  const getData = async () => {    
-      const response = await fetch(`https://my.api.mockaroo.com/orders.json?key=e49e6840`);  
-      const data = await response.json();     
-      console.log(data);   
-  };
   return (
     <Router>
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/Tracking" component={TrackingPage} />
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/Customer/:id"
+            render={({ match }) => (
+              <CustomerPage match={match} information={information} />
+            )}
+          />
+          <Route path="/Result/:query"
+            render={({ match }) => (
+              <TrackingPage match={match} information={information} />
+            )}
+          />
           <Route path="/Faq" component={Faq} />
-          
         </Switch>
       </div>
     </Router>

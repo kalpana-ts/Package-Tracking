@@ -2,16 +2,19 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10vh;
+    min-height: 5vh;
     background-color: rgb(240, 187, 13);
-    margin-bottom: 20px;;
+    margin: 0px, 20px;
 }
 
 .nav-links {
     width: 80%;
     display: flex;
+    flex-flow: column;
+    
     justify-content: space-around;
-    align-items: right;
+    align-items: center;
+    align-content: space-around;
 
     list-style: none;
 }

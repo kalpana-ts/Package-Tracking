@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Result({ data }){
     const { id,status,eta,parcel_id,sender,location_name,user_phone,user_name } = data;
-
+    
 
     return(
         <div className="result">
