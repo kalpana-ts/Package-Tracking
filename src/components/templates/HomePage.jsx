@@ -4,8 +4,6 @@ import React from "react";
 //Other Components
 import Login from "../molecules/Login"
 
-import Search from "../molecules/Search";
-// import './css/style.css';
 
 export default function HomePage() {
   return (
@@ -14,3 +12,4 @@ export default function HomePage() {
     </div>
   );
 }
+

@@ -37,7 +37,7 @@ export default function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route exact path="/Customer/:id"
+          <Route exact path="/Customer/:query"
             render={({ match }) => (
               <CustomerPage match={match} information={information} />
             )}

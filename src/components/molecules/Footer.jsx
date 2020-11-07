@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 //Other imports
 import logo from "../../assets/logo.png";
 
-export default function Header() {
+export default function Footer() {
   return (
     <nav>
       <img
@@ -24,5 +24,3 @@ export default function Header() {
     </nav>
   );
 }
-
-
