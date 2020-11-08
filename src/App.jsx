@@ -12,28 +12,24 @@ import Faq from "./components/templates/Faq";
 
 import "./css/style.css";
 
-//dummy data
-import information from "./information.json";
-
-
 export default function App() {
-//   const [information, setInformation] = useState([]);
-//   const endPoint = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
+  const [information, setInformation] = useState([]);
+  const endPoint = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
 
-//   useEffect(() => {  
-//     getData();
-//   }, []);
+  useEffect(() => {  
+    getData();
+  }, []);
 
-//   const getData = async () => {  
-//   try{
-//     const response = await fetch(endPoint,{mode:"cors"});  
-//       const data = await response.json();     
-//       setInformation(data); 
-//       console.log(information);
-//   }catch{
-//     console.log("Error while fetching API");
-//   }
-// };
+  const getData = async () => {  
+  try{
+    const response = await fetch(endPoint,{mode:"cors"});  
+      const data = await response.json();     
+      setInformation(data); 
+      console.log(information);
+  }catch{
+    console.log("Error while fetching API");
+  }
+};
 
 
 return (
