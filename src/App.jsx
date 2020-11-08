@@ -49,7 +49,7 @@ return (
             <CustomerPage parameter={match.params.parameter} information={information} />
           )}
         />
-        <Route path="/Result/:query"
+        <Route path="/Result/:parameter"
           render={({ match }) => (
             <TrackingPage parameter={match.params.parameter} information={information} />
           )}

@@ -20,7 +20,7 @@ export default function Footer() {
       
       <h3>Mail us</h3>
       <a href="mailto:yellowcorporation@gmail.com">yellowcorporation@gmail.com</a>
-
+      <p>2020 © Yellow Corportions. All rights reserved.</p>
       
     </nav >
   );

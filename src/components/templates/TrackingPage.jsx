@@ -8,6 +8,7 @@ import Result from "../molecules/Result";
 export default function TrackingPage({parameter,information}) {
     
     const result = information.filter((item) => {return (item.id)===(parameter)});
+    console.log(result);
     if(result[0] === undefined){
     return (
         <div className="Tracking-Page">

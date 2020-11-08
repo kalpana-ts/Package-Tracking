@@ -37,7 +37,6 @@ export default function CustomerPage({ parameter, information }) {
                         parcel_id={item.parcel_id}
                         status={item.status} />
                 ))}
-
             </div>
         );
 }
