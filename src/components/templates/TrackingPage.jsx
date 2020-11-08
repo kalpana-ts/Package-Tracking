@@ -20,8 +20,9 @@ export default function TrackingPage({parameter,information}) {
     }else
     return (
         <div className="Tracking-Page">
-            <h1>Tracking Page</h1>
+            <h1>Your Parcel Details</h1>
             <Result data={result[0]}/>
+            <h3>Thank you for visiting!!</h3>
         </div>
     );
 }

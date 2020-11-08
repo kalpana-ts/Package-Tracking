@@ -7,15 +7,18 @@ export default function Result({ data }) {
     return (
         <div className="result">
             <article className="result-left">
-                <p>Parcel ID: {parcel_id}</p>
-                <p>Sender: {sender} </p>
-                <p>Status: {status}</p>
+                <p><strong>Parcel ID:</strong> 
+                {parcel_id}</p>
+                <p><strong>Sender:</strong>
+                     {sender} </p>
+                <p><strong>Status:</strong> {status}</p>
                 
             </article>
             <article className="result-right">
-                <p>Expected Arrival Time : {eta}</p>
-                <p>Notes: {notes} </p>
-                <p>location: {location_name}</p>
+                <p> <strong>Expected Arrival Time : </strong>
+                    {eta}</p>
+                <p><strong>Notes: </strong>{notes} </p>
+                <p><strong>location:</strong> {location_name}</p>
             </article>
         </div>
     );
