@@ -14,11 +14,11 @@ export default function Header() {
         alt="Logo of the company"
       />
       <ul className="nav-links">
-        <Link to="/Faq">
-          <li>FAQ</li>
-        </Link>
-        <Link to="/" >
+        <Link to="/">
           <li>Home</li>
+        </Link>
+        <Link to="/Faq" >
+          <li>FAQ</li>
         </Link>
       </ul>
     </header>

@@ -1,8 +1,19 @@
-.Footer{
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    /* min-height: 3vh; */
-    background-color: rgb(240, 187, 13);
-    margin-top:  20px;
+footer{
+    background-color:  rgb(240, 187, 13);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    padding-bottom: 10px;
+    font-size: small;
+    margin-top: 10px;
+}
+.footer-left{
+    margin-left: 5px;
+    
+}
+
+@media only screen and (min-width: 750px) {
+footer{
+    font-size: medium;
+}
 }

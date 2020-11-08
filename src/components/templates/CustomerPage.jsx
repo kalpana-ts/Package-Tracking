@@ -19,13 +19,13 @@ export default function CustomerPage({ parameter, information }) {
     } else
         return (
             <div className="Customer-Page">
-                <h1>Welcome {result[0].user_name}</h1>
+                <h2 className="welcome-tag">Welcome {result[0].user_name}</h2>
                 <Search />
                 <table className="tab">
                     <thead>
-                        <tr>
-                            <th>ID</th>
+                        <tr className="rows">
                             <th>Parcel_ID</th>
+                            <th>Sender</th>
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -33,11 +33,10 @@ export default function CustomerPage({ parameter, information }) {
                 {information.map(item => (
                     <AllParcel
                         key={item.id}
-                        id={item.id}
                         parcel_id={item.parcel_id}
+                        sender={item.sender}
                         status={item.status} />
                 ))}
-
             </div>
         );
 }
