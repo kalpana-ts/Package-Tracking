@@ -1,3 +1,13 @@
+# Package tracking application for yellow corpoations.
+
+A user can enter his/her username in the login page to see all the parcles that he/she is waiting to be delivered.
+
+On his cutomer page he can enter the parcel id to track and see the current status.
+
+# how to run the web app:
+
+You can clone it from the repo and run it from the project directory.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
