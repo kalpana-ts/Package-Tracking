@@ -10,3 +10,10 @@ font-weight: 700;
 font-size: 1rem;
 margin: 5px;
 }
+
+.Home-Page{
+  background-color: orange;
+  display: grid;
+  align-content: start;
+  justify-items: center;
+}

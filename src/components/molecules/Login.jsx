@@ -14,7 +14,7 @@ export default function Login() {
     
     return (
         <form className="login-form">
-            <label>Enter your FullName to see your list of parcels  </label>
+            <label>Enter your FullName to see your parcels  </label>
             <input className="search-bar"
                 type="text"
                 placeholder="Jhon Doe"

@@ -13,8 +13,8 @@ export default function TrackingPage({parameter,information}) {
     if(result[0] === undefined){
     return (
         <div className="Tracking-Page">
-            <h1>Tracking Page</h1>
-            <p>Entered tracking ID is not valid, check again</p>
+            <h1>Your Parcel Details</h1>
+            <p> Could not find entered parcel number , Please check your tracking number again</p>
         </div>     
     );
     }else

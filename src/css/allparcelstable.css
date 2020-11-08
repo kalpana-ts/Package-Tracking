@@ -1,6 +1,7 @@
 table {
     width: 100%;
     border-collapse: collapse;
+    
 }
 
 th {
@@ -10,7 +11,10 @@ th {
 }
 
 td, th {
-    padding: 6px;
     border: 1px solid #ccc;
     text-align: left;
+}
+.rows{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

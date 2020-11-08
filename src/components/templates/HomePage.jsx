@@ -7,7 +7,7 @@ import Login from "../molecules/Login"
 
 export default function HomePage() {
   return (
-    <div className="home-page">
+    <div className="Home-page">
       <Login/>
     </div>
   );
