@@ -15,7 +15,7 @@ export default function Search() {
     
     return (
         <form className="search-form">
-            <label>Enter your tracking number </label>
+            <label>Enter your tracking number (Parcel_ID) to see the details</label>
             <input className="search-bar"
                 type="text"
                 placeholder="Tracking Number"

@@ -1,15 +1,22 @@
 import React from "react";
 
-export default function Result({ data }){
-    const { id,status,eta,parcel_id,sender,location_name,user_phone,user_name } = data;
-    
+export default function Result({ data }) {
+    const { parcel_id,status, eta,  sender, location_name,notes, } = data;
 
-    return(
+
+    return (
         <div className="result">
-            <p>ID: {id}</p>
-            <p>Parcel ID: {parcel_id}</p>
-            <p>status: {status}</p>
-            <p>ETA: {eta}</p>
+            <article className="result-left">
+                <p>Parcel ID: {parcel_id}</p>
+                <p>Sender: {sender} </p>
+                <p>Status: {status}</p>
+                
+            </article>
+            <article className="result-right">
+                <p>Expected Arrival Time : {eta}</p>
+                <p>Notes: {notes} </p>
+                <p>location: {location_name}</p>
+            </article>
         </div>
     );
 }

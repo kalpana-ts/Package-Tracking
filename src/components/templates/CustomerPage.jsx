@@ -24,8 +24,8 @@ export default function CustomerPage({ parameter, information }) {
                 <table className="tab">
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Parcel_ID</th>
+                            <th>Sender</th>
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -33,8 +33,8 @@ export default function CustomerPage({ parameter, information }) {
                 {information.map(item => (
                     <AllParcel
                         key={item.id}
-                        id={item.id}
                         parcel_id={item.parcel_id}
+                        sender={item.sender}
                         status={item.status} />
                 ))}
             </div>
