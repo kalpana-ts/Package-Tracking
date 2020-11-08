@@ -5,12 +5,9 @@ import React, { useState } from "react";
 import Result from "../molecules/Result";
 
 
-export default function TrackingPage({match,information}) {
-//Check the dev ed video
-    const query=new RegExp(match.params.query, "i");
-   // const [result, setResult, isError] = useState("");
-    const result = information.filter((item) => item.id.match(query));
+export default function TrackingPage({parameter,information}) {
     
+    const result = information.filter((item) => {return (item.id)===(parameter)});
     if(result[0] === undefined){
     return (
         <div className="Tracking-Page">

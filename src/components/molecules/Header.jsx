@@ -7,7 +7,7 @@ import logo from "../../assets/logo.png";
 
 export default function Header() {
   return (
-    <nav>
+    <header className="header">
       <img
         className="logo"
         src={logo}
@@ -21,7 +21,7 @@ export default function Header() {
           <li>Home</li>
         </Link>
       </ul>
-    </nav>
+    </header>
   );
 }
 

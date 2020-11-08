@@ -1,21 +1,33 @@
 //React Core
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 export default function Search() {
     //Reactive Data
     const [query, setQuery] = useState("");
+
+    const history = useHistory();
+
+    const getTrackingPage = (event) => {
+        event.preventDefault();
+        history.push(`/Result/${query}`);   
+    };
+    
     return (
         <form className="search-form">
-            <label htmlFor="trackNumber">Enter your tracking number </label>
+            <label>Enter your tracking number </label>
             <input className="search-bar"
                 type="text"
                 placeholder="Tracking Number"
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
             />
-            <Link to={`/Result/${query}`}>Submit</Link>
+            <button
+                className="search-button"
+                type="submit"
+                onClick={(event) => getTrackingPage(event)}
+            >
+                Submit</button>
         </form>
     );
-    
 }
