@@ -8,6 +8,8 @@ On his cutomer page he can enter the parcel id to track and see the current stat
 
 You can clone it from the repo and run it from the project directory.
 
+You can also directly visit the website : https://yellow-package.web.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
